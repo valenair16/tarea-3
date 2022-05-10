@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body >
+  <h1>¿Que es un formulario html y para que sirve ?</h1> 
+
+<p>Form es una etiqueta de HTML que representa un formulario. En este formulario se agregan 
+    los diferentes campos de entrada de datos o de confirmación,
+     así como los botones, que como mínimo ha de haber uno, el de envío..</p>
+
+     <p> <h1>Etiquetas Basicas de un formulario:</h1> </p>
+     
+     <P> <strong>Form</strong> Para crear el formulario</P>
+     <P> <strong>fieldset</strong> permite organizar en grupos los campos de un formulario.</P>
+     <P> <strong>Legend</strong> crea un título para un grupos los campos de un formulario.</P>
+     <P> <strong>input</strong> Los atributos de INPUT son: TYPE determina el tipo de entrada que se va a utilizar 
+        y sus valores pueden ser uno de los siguientes: text, muestra una caja donde introducir texto.</P>
+     <P> <strong>button</strong> representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios
+         o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.</P>
+
+
+     <form action="#" method="post" 
+     ><fieldset>
+
+      ><P><h2>REGISTRO DEL VEHICULO</h2> </P>
+<p> <h3>Datos Personales:</h3></p>
+        
+        <p>
+          <fieldset> <legend>  <label > Nombre y apellido:</label>  </legend>
+            <input type="text" id="Nombre" name="Nombre"  placeholder="Ingrese nombre Y apellido" required > </fieldset>
+        </p>
+        <p>
+           <fieldset> <legend><label  > Correo Electronico</label> </legend>
+            <input type="email" name="Correo" placeholder="Ingrese correo electronico" required  > </fieldset>
+        </p>
+        <p> <fieldset> <legend> <label >DNI:</label> </legend> 
+            <input type="number" name="DNI" placeholder="Ingrese DNI" required step="0"> </fieldset>
+        </p>
+        <p> <fieldset> <legend>
+<label >Nacionalidad:
+</label> </legend> 
+<input type="text" name="Nacionalidad" placeholder="Ingrese su Nacionalidad" required > </fieldset>
+        </p>
+        <p>
+           <fieldset> <legend> <label > Provincia:</label> </legend>
+            <input type="text" name="Provincia" placeholder="Ingrese su provincia" required> </fieldset>
+        </p>
+<p>
+   <fieldset> <legend><label > Fecha de Nacimiento</label> </legend>
+    <input type="date" name="fecha" id="fecha" placeholder="Ingrese fecha de nacimiento"> </fieldset>
+</p>
+            <h3>Datos del vehiculo:</h3>
+            <p> <fieldset> <legend>
+                <label  aria-required="true"> Su vehiculo es:</label> </legend>
+                <input type="radio" name="vehiculo" value="moto"> moto
+                <input type="radio" name="vehiculo" value="auto"> auto
+                <input type="radio" name="vehiculo"  value="camioneta"> camioneta </fieldset>
+            </p>
+            <p>
+              <fieldset> <legend> <label >matricula:</label> </legend>
+                <input type="texto" name="matricula" id="matricula" required > </fieldset>
+            </p>
+            <p>
+               <fieldset> <legend> <label > Modelo del vehiculo</label> </legend>
+                <input type="text" name="modelo" id="modelo" required> </fieldset>
+            </p>
+            
+            <p>
+             <fieldset>  <legend> <label >Color del vehiculo:</label> </legend>
+                <input type="color" name="color" id="color" required> </fieldset>
+            </p>
+            <p>
+               <button type="button"> Enviar</button>
+            </p>
+            <p>
+                <label for="observaciones"> <h1 >Observaciones:</h1> </label>
+                <textarea name="observaciones" id="obsservaciones" cols="30" rows="10"></textarea>
+                
+            </p>
+           
+            
+            
+            
+        </fieldset>
+     </form>
+</body>
+</html>
